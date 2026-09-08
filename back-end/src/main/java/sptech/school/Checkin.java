@@ -6,6 +6,9 @@ public class Checkin {
     private Integer id;
     private LocalDateTime dataHora;
     private String tipoTreino;
+    private Integer duracaoMinutos;
+    private String intensidade;
+    private String localTreino;
 
     public Checkin(Integer id, LocalDateTime dataHora, String tipoTreino) {
         this.id = id;
@@ -38,5 +41,29 @@ public class Checkin {
 
     public void setTipoTreino(String tipoTreino) {
         this.tipoTreino = tipoTreino;
+    }
+
+    public Integer getDuracaoMinutos() {
+        return duracaoMinutos;
+    }
+
+    public void setDuracaoMinutos(Integer duracaoMinutos) {
+        this.duracaoMinutos = duracaoMinutos;
+    }
+
+    public String getIntensidade() {
+        return intensidade;
+    }
+
+    public void setIntensidade(String intensidade) {
+        this.intensidade = intensidade;
+    }
+
+    public String getLocalTreino() {
+        return localTreino;
+    }
+
+    public void setLocalTreino(String localTreino) {
+        this.localTreino = localTreino;
     }
 }
