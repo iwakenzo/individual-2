@@ -1,2 +1,2 @@
-# individual-2
-Projeto Individual para SPTECH
+# FREQUENCE
+Projeto Individual para a primeira sprint do terceiro semestre de ADS da SPTECH 
