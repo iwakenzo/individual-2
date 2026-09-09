@@ -1,0 +1,82 @@
+.painel {
+    padding: 12px 0;
+    min-width: 0;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.cabecalho>div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.numero {
+    color: #4d7c0f;
+    font-size: .75rem;
+}
+
+.cabecalho h2 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.cabecalho button {
+    background: #ffffff;
+    border: 1px solid transparent;
+    color: #35472c;
+    border-radius: 6px;
+    padding: 9px 12px;
+    font-size: .875rem;
+}
+
+.cabecalho button:active:not(:disabled) {
+    background: #bef264;
+    color: #17230a;
+}
+
+.descricao {
+    color: #596653;
+    font-size: .875rem;
+    margin: 12px 0 26px;
+}
+
+.lista {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.estado {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    padding: 64px 24px;
+    text-align: center;
+    border-radius: 12px;
+    color: #596653;
+    line-height: 1.6;
+}
+
+.estado h3 {
+    color: #202b20;
+    font-size: 1.1rem;
+    margin: 20px 0 8px;
+}
+
+.estado p {
+    margin: 0;
+}
+
+.erro {
+    padding: 24px;
+    border: 1px solid #fce8e4;
+    background: #fce8e4;
+    color: #a52d24;
+    border-radius: 10px;
+    line-height: 1.6;
+}

@@ -1,0 +1,93 @@
+.card {
+    display: flex;
+    gap: 20px;
+    padding: 22px 0;
+}
+
+.card:first-child {
+    padding-top: 0;
+}
+
+.data {
+    width: 58px;
+    min-width: 58px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #e4efcf;
+    border-radius: 8px;
+    color: #4d7c0f;
+    gap: 2px;
+}
+
+.data strong {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.data span {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.detalhes {
+    flex: 1;
+    min-width: 0;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.topo h3 {
+    font-size: 1.05rem;
+    margin: 2px 0 10px;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+}
+
+.bullet {
+    color: #3c611a;
+    background: #e4efcf;
+    border: 1px solid #e4efcf;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    padding: 5px 9px;
+}
+
+.detalhes p {
+    color: #526348;
+    font-size: 0.875rem;
+    margin: 0 0 9px;
+    overflow-wrap: anywhere;
+}
+
+.detalhes p span {
+    margin: 0 6px;
+    color: #637359;
+}
+
+.detalhes time {
+    color: #596653;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 420px) {
+    .card {
+        gap: 12px;
+    }
+
+    .topo {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .bullet {
+        margin-bottom: 10px;
+    }
+}

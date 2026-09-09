@@ -1,0 +1,127 @@
+.pagina {
+    max-width: 1240px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.cabecalho {
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-decoration: none;
+}
+
+.marca span {
+    color: #4d7c0f;
+}
+
+.etiqueta {
+    font-size: .75rem;
+    letter-spacing: 2px;
+    color: #596653;
+}
+
+.abertura {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 32px;
+    padding: 44px 0 36px;
+}
+
+.sobretitulo {
+    color: #4d7c0f;
+    letter-spacing: 2px;
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.abertura h1 {
+    font-size: clamp(6rem, 5vw, 4.5rem);
+    line-height: 1.03;
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+}
+
+.abertura h1 span {
+    color: #4d7c0f;
+}
+
+.abertura p:last-child {
+    color: #596653;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.resumo {
+    display: flex;
+    gap: 36px;
+    padding-bottom: 8px;
+}
+
+.resumo div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resumo strong {
+    font-size: 2.6rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+.resumo span {
+    font-size: .875rem;
+    color: #596653;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: minmax(320px, .9fr) minmax(0, 1.3fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.rodape {
+    padding: 32px 0;
+    font-size: .875rem;
+    color: #596653;
+    border-top: 1px solid #9eaf91;
+    margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+    .pagina {
+        padding: 0 20px;
+    }
+
+    .abertura {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    .resumo {
+        gap: 40px;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .etiqueta {
+        max-width: 125px;
+        text-align: right;
+        line-height: 1.6;
+    }
+}

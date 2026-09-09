@@ -1,0 +1,128 @@
+.painel {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 28px;
+    border-radius: 14px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.titulo>span {
+    color: #4d7c0f;
+    font-size: .75rem;
+}
+
+.titulo h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.descricao {
+    color: #596653;
+    font-size: .875rem;
+    line-height: 1.6;
+    margin: 12px 0 24px;
+}
+
+.painel fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+.painel label {
+    display: block;
+    font-size: .875rem;
+    margin: 20px 0 9px;
+}
+
+.painel label:first-child {
+    margin-top: 0;
+}
+
+.painel label span {
+    color: #596653;
+    font-size: .75rem;
+    margin-left: 6px;
+}
+
+.painel input,
+.painel select {
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    background: #eaf0e4;
+    border: 1px solid #eaf0e4;
+    color: #202b20;
+    border-radius: 7px;
+    padding: 12px;
+    color-scheme: light;
+}
+
+.painel input::placeholder {
+    color: #687660;
+}
+
+.painel small {
+    display: block;
+    color: #596653;
+    line-height: 1.5;
+    margin-top: 8px;
+    font-size: .75rem;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.painel button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 18px;
+    background: #eaf0e4;
+    color: #202b20;
+    border: none;
+    font-weight: bold;
+    border-radius: 7px;
+    margin-top: 26px;
+}
+
+.painel button:active:not(:disabled) {
+    background: #bef264;
+    color: #17230a;
+}
+
+.erro,
+.sucesso {
+    margin: 18px 0 0;
+    font-size: .875rem;
+    line-height: 1.6;
+}
+
+.erro {
+    color: #a52d24;
+}
+
+.sucesso {
+    color: #4d7c0f;
+}
+
+@media (max-width: 420px) {
+    .painel {
+        padding: 20px;
+    }
+
+    .linha {
+        grid-template-columns: 1fr;
+    }
+}
