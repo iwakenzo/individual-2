@@ -5,7 +5,7 @@ function ListaCheckins({ checkins, carregando, erro, aoAtualizar }) {
   return (
     <section className={styles.painel}>
       <div className={styles.cabecalho}>
-        <div><span className={styles.numero}>02</span><h2 id="titulo-historico">Meu histórico</h2></div>
+        <div><h2 id="titulo-historico">Meu histórico</h2></div>
         <button onClick={aoAtualizar} disabled={carregando}>Atualizar</button>
       </div>
       <p className={styles.descricao}>Suas conquistas estão aqui.</p>

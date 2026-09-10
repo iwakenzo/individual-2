@@ -50,7 +50,6 @@ function FormularioCheckin({ aoCadastrar }) {
   return (
     <section className={styles.painel}>
       <div className={styles.titulo}>
-        <span>01</span>
         <h2 id="titulo-cadastro">Registrar treino</h2>
       </div>
       <p className={styles.descricao}>Um check-in por dia. Uma vitória por dia.</p>
